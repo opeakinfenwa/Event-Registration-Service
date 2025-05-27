@@ -1,0 +1,55 @@
+{"context":"Connected to PostgreSQL","level":"info","message":"info"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application..."}
+{"context":"DatabaseModule initialized","level":"info","message":"info"}
+{"context":{"module":"Main"},"level":"info","message":"Event Registration Service listening on port 5001"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized"}
+{"context":"InstanceLoader","level":"info","message":"LoggerModule dependencies initialized"}
+{"context":"InstanceLoader","level":"info","message":"PassportModule dependencies initialized"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized"}
+{"context":"InstanceLoader","level":"info","message":"CommonModule dependencies initialized"}
+{"context":"InstanceLoader","level":"info","message":"WinstonModule dependencies initialized"}
+{"context":"InstanceLoader","level":"info","message":"DatabaseModule dependencies initialized"}
+{"context":"InstanceLoader","level":"info","message":"EventsModule dependencies initialized"}
+{"context":"InstanceLoader","level":"info","message":"UsersModule dependencies initialized"}
+{"context":"InstanceLoader","level":"info","message":"WaitlistModule dependencies initialized"}
+{"context":"InstanceLoader","level":"info","message":"AdminModule dependencies initialized"}
+{"context":"InstanceLoader","level":"info","message":"RegistrationsModule dependencies initialized"}
+{"context":"InstanceLoader","level":"info","message":"AuthModule dependencies initialized"}
+{"context":"RoutesResolver","level":"info","message":"UserController {/users}:"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/users/signup, POST} route"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/users/:id, PATCH} route"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/users/:id, DELETE} route"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/users/me, GET} route"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/users/:id, GET} route"}
+{"context":"RoutesResolver","level":"info","message":"AuthController {/auth}:"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/auth/login, POST} route"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/auth/logout, POST} route"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/auth, GET} route"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/auth/google, GET} route"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/auth/google/callback, GET} route"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/auth/dashboard, GET} route"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/auth/failure, GET} route"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/auth/reset-password, PATCH} route"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/auth/change-password, PATCH} route"}
+{"context":"RoutesResolver","level":"info","message":"EventController {/events}:"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/events, POST} route"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/events, GET} route"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/events/:id, GET} route"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/events/my-events, GET} route"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/events/:id, PATCH} route"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/events/:id, DELETE} route"}
+{"context":"RoutesResolver","level":"info","message":"RegistrationController {/registrations}:"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/registrations/:eventId, POST} route"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/registrations/:eventId, DELETE} route"}
+{"context":"RoutesResolver","level":"info","message":"WaitlistController {/waitlist}:"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/waitlist/events/:eventId/join, POST} route"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/waitlist/my, GET} route"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/waitlist/events/:eventId/leave, DELETE} route"}
+{"context":"RoutesResolver","level":"info","message":"AdminController {/admin}:"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/admin/events/:eventId/attendees, GET} route"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/admin/events/:eventId/waitlist, GET} route"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started"}
+{"context":"Shutting down PostgreSQL pool via onModuleDestroy","level":"info","message":"info"}
