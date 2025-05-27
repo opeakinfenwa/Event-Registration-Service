@@ -2,7 +2,7 @@
 
 This project is a modular and extensible backend system designed to manage event registration workflows with clear domain boundaries. It utilizes raw PostgreSQL for database operations, custom migration and seed runners, and is structured with clean architecture principles for maintainability, scalability, and extensibility.
 
-### Architecture Overview
+## Architecture Overview
 
 The system is composed of dedicated modules following domain-driven design:
 
@@ -13,7 +13,7 @@ The system is composed of dedicated modules following domain-driven design:
 * **Waitlist Module** – Automatically manages waitlisting for full events and promotes users as slots become available.
 * **Admin Module** – Grants elevated access to manage users, events, and registrations.
 
-### Database Strategy with PostgreSQL
+## Database Strategy with PostgreSQL
 
 #### Raw SQL + Programmatic Control
 
@@ -50,7 +50,7 @@ npm run seed        # Runs all seed scripts
 npm run seed:undo   # Reverts the most recent seeding action
 ```
 
-### Features by Module
+## Features by Module
 
 #### User Module
 
@@ -98,7 +98,7 @@ npm run seed:undo   # Reverts the most recent seeding action
   * Managing users and event capacities
 * Role-based route protection enforced across modules
 
-### Engineering Principles & Efficiencies
+## Engineering Principles & Efficiencies
 
 * **Domain Modularity**: Each module has clearly scoped responsibility and uses dependency injection.
 * **Raw SQL**: Offers granular performance tuning and database transparency.
@@ -109,7 +109,7 @@ npm run seed:undo   # Reverts the most recent seeding action
   * Rollback Support: Ensures production-safe scripts
 * **Strict Separation**: `migrations/` and `seeders/` folders enforce discipline in data/schema changes
 
-### Getting Started
+## Getting Started
 
 #### Requirements
 
@@ -141,7 +141,7 @@ npm run seed
 npm run start:dev
 ```
 
-### Project Structure
+## Project Structure
 
 ```plaintext
 src/
@@ -162,7 +162,7 @@ src/
 │   └── seed-runner.ts
 ```
 
-### Sample Flow
+## Sample Flow
 
 ```bash
 # Migration
@@ -175,7 +175,7 @@ npm run seed
 # Output: ✅ Seeded users table with 5 default users
 ```
 
-### Future Improvements
+## Future Improvements
 
 * Add Swagger docs for all endpoints
 * Add testing with Jest and PostgreSQL containers
@@ -188,6 +188,6 @@ npm run seed
 Built to demonstrate clear understanding of domain-based modular design, raw SQL-based database operations, and robust migration/seeding strategies using handcrafted CLI tools.
 
 
-### License
+## License
 
 This project is licensed under the MIT License
