@@ -94,7 +94,7 @@ async function rollbackLastMigration() {
   const sql = readFileSync(rollbackFile, 'utf8');
 
   try {
-    console.log(`⏪ Rolling back: ${lastMigration}`);
+    console.log(`Rolling back: ${lastMigration}`);
     await client.query('BEGIN');
     await client.query(sql);
     await client.query(`DELETE FROM migrations WHERE filename = $1`, [
