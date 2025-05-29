@@ -1,4 +1,6 @@
-## Modular Event Registration System
+![MIT License](https://img.shields.io/badge/license-MIT-green)
+
+## Modular Event Registration Backend System
 
 This project is a modular and extensible backend system designed to manage event registration workflows with clear domain boundaries. It utilizes raw PostgreSQL for database operations, custom migration and seed runners, and is structured with clean architecture principles for maintainability, scalability, and extensibility.
 
