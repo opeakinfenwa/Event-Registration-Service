@@ -192,4 +192,4 @@ Built to demonstrate clear understanding of domain-based modular design, raw SQL
 
 ## License
 
-This project is licensed under the MIT License
+This project is licensed under the MIT License.
