@@ -108,7 +108,7 @@ npm run seed:undo   # Reverts the most recent seeding action
 
   * Migration Runner: Tracks versioned schema changes
   * Seed Runner: Easily populate tables for dev/test
-  * Rollback Support: Ensures production-safe scripts
+  * Rollback Support: Ensures production safe scripts
 * **Strict Separation**: `migrations/` and `seeders/` folders enforce discipline in data/schema changes
 
 ## Getting Started
