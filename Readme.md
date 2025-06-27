@@ -6,10 +6,10 @@ This project is a modular and extensible backend system designed to manage event
 
 ## Architecture Overview
 
-The system is composed of dedicated modules following domain-driven design:
+The system is composed of dedicated modules following domain driven design:
 
-* **User Module** – Manages user data, security questions, and user-level permissions.
-* **Auth Module** – Handles secure registration, login, password reset, and role-based JWT-based authentication.
+* **User Module** – Manages user data, security questions, and user level permissions.
+* **Auth Module** – Handles secure registration, login, password reset, and role-based JWT based authentication.
 * **Event Module** – Allows admins to create, update, and manage events.
 * **Registration Module** – Handles user registration to events, enforcing validation rules and attendance tracking.
 * **Waitlist Module** – Automatically manages waitlisting for full events and promotes users as slots become available.
@@ -31,7 +31,7 @@ A handcrafted migration system supports:
 
 * `up/` and `down/` folders: for forward and rollback SQL scripts
 * Local log tracking in `migration.history.json`
-* PostgreSQL-backed migrations table for persistent history
+* PostgreSQL backed migrations table for persistent history
 * Graceful rollback if any migration step fails
 
 ```bash
@@ -62,14 +62,14 @@ npm run seed:undo   # Reverts the most recent seeding action
 
 #### Auth Module
 
-* JWT-based authentication via secure cookies
+* JWT based authentication via secure cookies
 * Handles:
 
   * Registration
   * Login
   * Password reset via security questions
   * Password update
-* Role-based access control (e.g., student, admin)
+* Role based access control (e.g., student, admin)
 
 #### Event Module
 
@@ -81,7 +81,7 @@ npm run seed:undo   # Reverts the most recent seeding action
 
 #### Registration Module
 
-* Enforces one-user-per-event rules
+* Enforces one user per event rules
 * Tracks registration time
 * Validates event capacity before assigning spots
 
@@ -98,7 +98,7 @@ npm run seed:undo   # Reverts the most recent seeding action
   * Creating new admin accounts
   * Viewing all registrations
   * Managing users and event capacities
-* Role-based route protection enforced across modules
+* Role based route protection enforced across modules
 
 ## Engineering Principles & Efficiencies
 
@@ -123,11 +123,8 @@ npm run seed:undo   # Reverts the most recent seeding action
 Create a `.env` file and configure the following:
 
 ```env
-DATABASE_URL=postgres://user:pass@localhost:5432/dev_db
-DATABASE_URL_TEST=postgres://user:pass@localhost:5432/test_db
-DATABASE_URL_PROD=postgres://user:pass@localhost:5432/prod_db
-JWT_SECRET=super_secure_key
-NODE_ENV=development
+DATABASE_URL=...
+JWT_SECRET=...
 ```
 
 #### Install & Run
@@ -169,12 +166,12 @@ src/
 ```bash
 # Migration
 npm run migrate
-# Output: 🔄 Running migration: create-users-table.sql
-#         ✅ Applied migration
+# Output: Running migration: create-users-table.sql
+# Applied migration
 
 # Seeder
 npm run seed
-# Output: ✅ Seeded users table with 5 default users
+# Output: Seeded users table with 5 default users
 ```
 
 ## Future Improvements
@@ -187,7 +184,7 @@ npm run seed
 
 ## Acknowledgements
 
-Built to demonstrate clear understanding of domain-based modular design, raw SQL-based database operations, and robust migration/seeding strategies using handcrafted CLI tools.
+Built to demonstrate clear understanding of domain based modular design, raw SQL based database operations, and robust migration/seeding strategies using handcrafted CLI tools.
 
 
 ## License
