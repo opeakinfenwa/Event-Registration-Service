@@ -2,7 +2,7 @@
 
 ## Modular Event Registration System
 
-This project is a modular and extensible backend system designed to manage event registration workflows with clear domain boundaries. It utilizes raw PostgreSQL for database operations, custom migration and seed runners, and is structured with clean architecture principles for maintainability, scalability, and extensibility.
+This project is a modular and extensible backend system designed to manage event registration workflows with clear domain boundaries. It utilises raw PostgreSQL for database operations, custom migration and seed runners, and is structured with clean architecture principles for maintainability, scalability, and extensibility.
 
 ## Architecture Overview
 
@@ -21,7 +21,7 @@ The system is composed of dedicated modules following domain driven design:
 
 Instead of using an ORM, this project leverages raw PostgreSQL queries via the `pg` client for full control and visibility over schema evolution and data manipulation. This supports:
 
-* Performance optimizations
+* Performance optimisations
 * Precise schema control
 * Custom rollback logic for critical operations
 
